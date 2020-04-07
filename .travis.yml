@@ -8,4 +8,6 @@ go:
 
 
 script:
+ - go get -u github.com/gobuffalo/packr/packr
  - go test -v ./...
+ - cd src && packr build
