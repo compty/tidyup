@@ -4,8 +4,8 @@ go:
  - 1.4.2
  - 1.5.1
 
+before_install:
+  - go get -v github.com/gobuffalo/packr/packr
 
 script:
- - go get -u github.com/gobuffalo/packr/packr
- - go test -v ./...
  - cd src && packr build
