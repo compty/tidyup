@@ -5,5 +5,5 @@ go:
  - 1.5.1
 
 script:
-  - go get -v github.com/gobuffalo/packr/packr
+ - go get -v github.com/gobuffalo/packr/packr
  - cd src && packr build
